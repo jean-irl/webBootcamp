@@ -7,12 +7,118 @@
   </head>
   <body>
     <h1>Forms Demo</h1>
-    <form action="/tacos" for="Username">
-      <label id="Username" for="">Enter a Username:</label>
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="password" />
-      <input type="color" />
-      <input type="number" name="" id="" placeholder="number" />
+    <form action="/tacos" for="username">
+      <label for="username">Enter a Username:</label>
+      <input id="username" type="text" placeholder="Username" name="username" />
+      <p></p>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        name="password"
+      />
+      <p></p>
+      <button type="button">Please do not submit the form</button>
+      <p></p>
+      <input type="color" name="color" />
+      <p></p>
+      <label for="number">Number</label>
+      <input type="number" name="number" id="number" placeholder="number" />
+      <p></p>
+      <button>Submit</button>
+      <input type="button" value="Submit" />
     </form>
+    <hr />
+    <button>Not Inside a Form</button>
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" id="q" />
+      <button type="submit">Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" id="q" />
+      <button type="submit">Search Google</button>
+    </form>
+    <form action="https://www.tiktok.com/search">
+      <input type="text" name="q" id="q" />
+      <button type="submit">Search TikTok</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" id="search_query" />
+      <button type="submit">Search Youtube</button>
+    </form>
+    <h2>Radiobutton</h2>
+    <fieldset>
+      <form action="/tacos">
+        <div>
+          <input type="radio" name="size" id="s" value="s" />
+          <label for="">S</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="m" value="m" />
+          <label for="">M</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="l" value="l" />
+          <label for="">L</label>
+        </div>
+        <div>
+          <button>Send</button>
+        </div>
+      </form>
+    </fieldset>
+    <h2>Checkbox</h2>
+    <fieldset>
+      <form action="">
+        <div>
+          <input type="checkbox" name="tos" id="tos" value="agree" />
+          <label for="agree">Agree Terms of Service</label>
+        </div>
+        <div>
+          <button>Send Service</button>
+        </div>
+      </form>
+    </fieldset>
+    <h2>Select Box</h2>
+    <fieldset>
+      <form action="">
+        <div>
+          <label for="meal-select">Select an entree</label>
+        </div>
+        <select name="meals" id="meal-select">
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </form>
+    </fieldset>
+    <h2>Range Selector</h2>
+    <fieldset>
+      <form action="/tacos">
+        <div>
+          <input
+            type="range"
+            name="cheese_level"
+            id="cheese"
+            min="0"
+            max="10"
+          />
+          <label for="cheese">Cheese Selector</label>
+          <button>Submit Cheese Level</button>
+        </div>
+      </form>
+    </fieldset>
+    <h2>Text Area</h2>
+    <fieldset>
+      <div><label for="request">Anything extra?</label></div>
+
+      <textarea
+        name="request"
+        id="request"
+        cols="30"
+        rows="5"
+        placeholder="Type something here..."
+      ></textarea>
+    </fieldset>
   </body>
 </html>
