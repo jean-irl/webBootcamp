@@ -120,5 +120,20 @@
         placeholder="Type something here..."
       ></textarea>
     </fieldset>
+    <h2>Validation Example</h2>
+    <fieldset>
+      <form action="">
+        <div>
+          <label for="first">Firstname</label>
+          <input type="text" name="first" id="first" required />
+        </div>
+        <div>
+          <label for="user">Username</label>
+          <input type="text" minlength="5" name="user" id="user" />
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </fieldset>
   </body>
 </html>
